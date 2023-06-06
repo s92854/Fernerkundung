@@ -32,6 +32,11 @@ Landsat
 * Radarfernerkundung = Mikrowellenfernerkundung
 * Computer Vision = Teilgebiet der Informatik; Beschäftigt sich damit Computern das Sehen beizubringen
 * Klassifikation = Informationen aus Bilddaten gezielt extrahieren
+* Zeitreihenanalysen = Detektion von Veränderungen über die Zeit
+* Auflösungsarten = Zeitliche Auflösung (z.B. statt jede Woche ein Bild, jeden Tag ein Weg) und Bodenauflösung (in Pixel oder cm)
+* [Dendritisches Netz/ Entwässerungsnetz](https://www.spektrum.de/lexika/images/geogr/flussnet.jpg) - Verästellungen
+* Linamente - Streichrichtungen
+* Radar-Intensitätsbild und Radar-Interferrogramm
 
 
 ## Ist Photogrammetrie Fernerkundung?
@@ -45,5 +50,10 @@ Fernerkundung = Semantische/ Thematische Informationen aus Bildern ableiten/ ext
 --> theoretisch auch im mm Bereich, Aufnahmegerät näher an Boden --> Datengröße würde enorm steigen, der Bildbereich sinkt, also mehr Aufnahmen machen
 * 3D-Modell mit Fernerkundungsdaten texturiert
 
+
+### Beispiel Falschfarbenbild in Forstwirtschaft
+* Kanal des NIFR = rot eingefärbt
+* RGB Kanäle verschoben --> Infrarot nun sichtbar, aber kein natürlicher Farbeindruck mehr
+* je rotstichiger, desto kräftiger die Vegetation
 
 Vitale Vegetation reflektiert nahes Infrarot 
