@@ -63,3 +63,42 @@ Thermalsensor hat geringere Auflösung, da geringere Lichtenergie --> größere 
 * Falschfarben
 * Farbinfrarot
 * Schwadbreite
+
+
+# Einführung in ERDAS IMAGINE
+* Wenn bei Layer ein kleines Warndreieck ist --> sehr wahrscheinlich fehlende Bildpyramide
+-> Rechtsklick -> Correct Alert Problem -> Fehler wird angezeigt; Bestätigen für Korrektur
+* Home -> Basemap -> OpenStreetMap
+* Home -> Swipe zum swipen
+* Home -> Measure zum Messen
+* Rechtsklick -> Metadata; alle Daten zur Bilddatei, Projektion, etc.
+* Edit -> Compute Pyramid Layers/ Statistics -> Ignore Value 0 ; errechnet Bilddaten neu
+
+## Datentypen
+### nicht mit radiometrischer Auuflösung verwechseln!
+unsigned = ohne Vorzeichen
+signed = mit Vorzeichen
+unsignet 8bit = [0,255]
+signed 8bit = [-128,127]
+
+DM = Digital Number für Itensitätswerte
+Mode = Modalwert; Wert, der am häufigsten vorkommt
+LUT = Look Up Table [Tabelle mit Originalwerten]
+
+Original|Bildschirm
+--------|----------
+    1   | Ausgabe
+    2   | Ausgabe
+    3   | Ausgabe
+
+
+#### Skip-Faktor
+1 = alle Werte berechnen
+5 = alle fünf Werte berechnen
+usw.
+
+### Virtual Stack
+Rechtsklick in Arbeitsfläche -> Add Raster Layer -> B1 - B4 wählen -> Multiple -> Virtual Stack (.vsk Datei)
+
+### Falschfarben IR Bild
+Multispectral Tab -> Preset: Landsat 1,2,3 MSS und False Color IR -> Red: Layer 3; Green: Layer 2; Blue: Layer 1
