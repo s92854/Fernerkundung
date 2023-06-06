@@ -41,10 +41,10 @@ Thermalsensor hat geringere Auflösung, da geringere Lichtenergie --> größere 
 
 ## Radiometrische Auflösung
 * ... ist der Wertebereich pro Pixel (Grauwertabstufung)
-* 7bit = 2<sup>^7</sup> = 128 Werte [0,127]
-* 8bit = 2<sup>^8</sup> = 256 [0,255]
-* 12bit = 2<sup>^12</sup> = 4096 [0,4095]
-* 14bit = 2<sup>^14</sup> = 16384 [0,16383]
+* 7bit = 2<sup>7</sup> = 128 Werte [0,127]
+* 8bit = 2<sup>8</sup> = 256 [0,255]
+* 12bit = 2<sup>12</sup> = 4096 [0,4095]
+* 14bit = 2<sup>14</sup> = 16384 [0,16383]
 
 ## Spektrale Auflösung
 * Wie viele Farbkanäle werden abgedeckt
