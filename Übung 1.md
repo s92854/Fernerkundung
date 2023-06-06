@@ -33,7 +33,6 @@
 
 ![image](https://github.com/s92854/Fernerkundung/assets/134683810/a9d4e89d-6496-4002-a933-a020a37aa485)
 
-&nbsp;
 * zwischen 10<sup>-15</sup> und 10<sup>-14</sup> atmosphärische Fenster
 * Je größer der abgeckte Bereich, desto mehr Informationen werden auf den Pixeln hinterlegt
 
