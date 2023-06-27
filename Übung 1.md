@@ -110,8 +110,23 @@ Künstliches Grünfarbenbild
 
 
 ### Sentinel 2
+#### Generelles
+* Sentinel 2 verwendet Strahlung im L-Band (Lambda: ca. 6cm)
+* Senden, Empfangen
+    * Vertikal senden, Vertikal empfangen: vv
+    * Vertikal senden, horizontal empfangen: vh
+    * horizontal senden, vertikal empfangen: hv
+    * horizontal senden, horizontal empfangen: hh
+
+
 Wenn Warnung/ kleines X:
 Normale Lizenz: Rechtsklick --> Correct the Alert Problem
 Study-Lizenz: Metadata --> Edit --> Compute Pyramid Layers/ Statistics
 --> Layer neu reinladen
 
+### Infrarot Bild
+* Layer ändern --> Rot: Layer 8; Grün: Layer 4; Blau: Layer 3
+
+
+### ???
+2017 Sentinel 1 --> subset_2_*.img --> Open Raster Layer --> Rechtsklick in Arbeitsfläche --> Swipe (Vergleiche von farbcodierten Wellenlängen möglich)
