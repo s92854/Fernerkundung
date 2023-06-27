@@ -73,6 +73,7 @@ Thermalsensor hat geringere Auflösung, da geringere Lichtenergie --> größere 
 * Home -> Measure zum Messen
 * Rechtsklick -> Metadata; alle Daten zur Bilddatei, Projektion, etc.
 * Edit -> Compute Pyramid Layers/ Statistics -> Ignore Value 0 ; errechnet Bilddaten neu
+* Messen: Home --> Measure --> Point standard, Polyline/ Polygon auswählen --> Punkt(e) wählen, bei letztenm Punkt Doppelklick
 
 ## Datentypen
 ### nicht mit radiometrischer Auuflösung verwechseln!
@@ -102,3 +103,15 @@ Rechtsklick in Arbeitsfläche -> Add Raster Layer -> B1 - B4 wählen -> Multiple
 
 ### Falschfarben IR Bild
 Multispectral Tab -> Preset: Landsat 1,2,3 MSS und False Color IR -> Red: Layer 3; Green: Layer 2; Blue: Layer 1
+
+### Natural Color Bild
+Raster --> Spectral --> Natural Color --> .img wählen--> Ignore Zero in Stats --> Neues .img reinladen
+Künstliches Grünfarbenbild
+
+
+### Sentinel 2
+Wenn Warnung/ kleines X:
+Normale Lizenz: Rechtsklick --> Correct the Alert Problem
+Study-Lizenz: Metadata --> Edit --> Compute Pyramid Layers/ Statistics
+--> Layer neu reinladen
+
