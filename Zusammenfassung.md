@@ -25,6 +25,8 @@ Fernerkundung ist die Gesamtheit der Verfahren zur Gewinnung von Informationen �
 * Form der Energieausbreitung - mit Lichtgeschwindigkeit $c$
 * besitzt Frequenz $\nu$ und Wellenlänge $\lambda$
 
+![Elektromagnetisches Spektrum](https://github.com/s92854/Fernerkundung/assets/134683810/d9e0c60e-6b14-47af-9e1c-3d42fb2d2f1f)
+
 ![Strahlungsfluss](https://github.com/s92854/Fernerkundung/assets/134683810/686ed4e9-fcbc-485e-ac90-ed3434fb3891)
 
 * Reflexionsgrad $\rho$
@@ -49,13 +51,86 @@ $\epsilon = \alpha$
 Ein Körper, der stark absorbiert ist auch ein guter Strahler und umgekehrt.
 $\epsilon$ und §\alpha$ sind stark wellenlängenabhängig
 
+### Plank
+#### Plank'sches Strahlungsgesetz
+* Zusammenhang zwischen Strahlunsleistung pro Fläche und Raumwinkel bei einer bestimmten Wellenlänge und der Temperatur eines Körpers
+#### Planksches Strahlungsspektrum
+* Darstellung der spektralen Strahldichte L<sub>SK</sub>
+#### Spektrale Strahldichte L<sub>SK</sub>
+* Angabe der Emission der Strahlungsleistung [in Watt] eines Körpers pro Fläche [m²] pro Raumwinkel [Steradiant: sr] in Abhängigkeit von der Wellenlänge der Strahlung [µm] bei einer bestimmten absoluten Temperatur [Kelvin].
+#### Steradiant
+* Maßeinheit für Raumwinkel
+* Bei Kungel mit r = 1: Kugelkalotte mit Fläche auf Kugeloberfläche von 1m²
+
+![steradiant](https://github.com/s92854/Fernerkundung/assets/134683810/77436f81-0264-42b1-b1ba-d1e7be9edd1f)
+
+> Raumwinkel der gesamten Kugeloberfläche: $4 \pi sr$
+
 ### Berücksichtigung der Wellenlängenabhängigkeit
 $\alpha(\lambda)$: Spektraler Absorptionsgrad
+
 $\epsilon(\lambda)$: Spektraler Emissionsgrad
+
 $\rho(\lambda)$: Spektraler Reflexionsgrad
+
 $\tau(\lambda)$: Spektraler Transmissionsgrad
 
-### Elektromagnetisches Spektrum
+## Einflüsse der Atmosphäre
+| Name | Einfluss |
+|------|----------|
+|Refraktion| Atmosphärische Strahlenbrechung durch Dichteveränderungen in der Luft |
+|Absorption|Umwandlung von Strahlungsendergie in Wärme|
+|Streuung|Streuung an kleinen Materieteilchen (Aerosolen)|
+|Extinktion: Absorption & Streuung|Auslöschung der für die Fernerkundung nutzbaren Strahlung|
 
-![Elektromagnetisches Spektrum](https://github.com/s92854/Fernerkundung/assets/134683810/d9e0c60e-6b14-47af-9e1c-3d42fb2d2f1f)
+### Atmosphärische Fenster
+* Für die Fernerkundung nutzbare Wellenlängenbereiche
+* Atmosphäre ist hier durchlässig
+* Sichtbares Licht ($\lambda > 0,3µm$) - Mikrowellen ($\lambda < 1m$)
 
+### Strahlungsverhältnisse bei der Aufnahme
+
+![strahlungsverhältnisse](https://github.com/s92854/Fernerkundung/assets/134683810/6c145079-4fb5-4da0-8dde-5b288ae95847)
+
+* Direkte (gerichtete) Sonnenstrahlung: Primärstrahlung
+* Indirekte (diffuse) Himmelsstrahlung (Streuung an Aerosolen): sekundäre Strahlungsquelle
+
+### Luftlicht
+* Anteil diffuser Himmelsstrahlung
+* verringert Kontraste
+* kurzwellige Wellenlängen überwiegen
+
+![luftlicht](https://github.com/s92854/Fernerkundung/assets/134683810/d2f6966b-ab3c-4440-8f02-8d7c931c934e)
+
+* Am Boden reflektiert der Nadelwald 1% der Strahlung, der trockene Sand 30% > Ergibt ein 1:30 Objektkontrast
+* In 3000m Höhe: Überlagerung von 3% durch Luftlicht > ergibt 4:33 ≈ 1:8 Bildkontrast
+--> Wolken sind ein Problem: $\lambda > 3cm$ kann Wolken durchdringen
+
+### Reflexion
+![reflexion_oberfläche](https://github.com/s92854/Fernerkundung/assets/134683810/4b513644-4a8a-4fc1-94f1-1e224b3c1056)
+
+#### Reflexion bei Blättern
+![blätter-reflexion](https://github.com/s92854/Fernerkundung/assets/134683810/512939ee-14cb-4521-8cbd-78fd4b2e52c9)
+
+* Mechanismen bezüglich Umgebungsstrahlung bis heute nicht vollständig erforscht
+* wichtige Komponente der biochemischen Prozesse auf der Erde
+* wichtige Rolle spielen Chlorophylle und Karotine, Wasser, Zellulose, Ligin, Stärke, Proteine, uvm.
+
+### Mitlicht - Gegenlicht
+![mitlicht-gegenlicht](https://github.com/s92854/Fernerkundung/assets/134683810/888a8336-1e4b-48e2-99c8-cfbe2c21938d)
+
+#### Mitlichtbereich
+![mitlicht](https://github.com/s92854/Fernerkundung/assets/134683810/2fda5fc9-3717-4951-a248-7bf9b7eb7eb5)
+
+#### Bildmitte
+![mitte](https://github.com/s92854/Fernerkundung/assets/134683810/638610a0-e79f-4924-8b8b-7f42ae71dc90)
+
+#### Gegenlichtbereich
+![gegenlicht](https://github.com/s92854/Fernerkundung/assets/134683810/af521dc7-587b-4ebd-bf19-77aa7a2a5feb)
+
+
+### Strahlungsverhältnisse an Wasserflächen
+![strahlung-wasserflächen](https://github.com/s92854/Fernerkundung/assets/134683810/24ce27bd-41ca-4f2a-adfa-2e051be6fc3b)
+
+#### Geometrischer Zusammenhang
+![geom-zusammenhang](https://github.com/s92854/Fernerkundung/assets/134683810/7495c655-afbf-4471-90af-2cf98bf9c59c)
