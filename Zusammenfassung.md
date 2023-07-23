@@ -128,9 +128,60 @@ $\tau(\lambda)$: Spektraler Transmissionsgrad
 #### Gegenlichtbereich
 ![gegenlicht](https://github.com/s92854/Fernerkundung/assets/134683810/af521dc7-587b-4ebd-bf19-77aa7a2a5feb)
 
-
 ### Strahlungsverhältnisse an Wasserflächen
 ![strahlung-wasserflächen](https://github.com/s92854/Fernerkundung/assets/134683810/24ce27bd-41ca-4f2a-adfa-2e051be6fc3b)
 
 #### Geometrischer Zusammenhang
 ![geom-zusammenhang](https://github.com/s92854/Fernerkundung/assets/134683810/7495c655-afbf-4471-90af-2cf98bf9c59c)
+
+### Strahlungsgrößen
+* Albedo
+  * Verhältnis Ausstrahlung-Einstrahlung der Erdoberfläche (kruzwelliger Sketralbereich)
+* Top of Atmosphere (TOA) Reflectance
+  * Verhältnis Ausstrahlung-Einstrahlung auf Sensor-Ebene außerhalb Erdatmosphäre
+* Surface Directional Reflextance (SDR)
+  * atmosphärisch korrigierte TOAR
+* Surface Reflectance (SR)
+  * wie SDR + winkelabhängige Effekte (bidirektionale Reflektanzverteilungsfunktion: BRDF)
+
+## Thermalstrahlung
+* in FIR (fernes Infrarot): 8 - 14 µm
+
+![thermalstrahlung](https://github.com/s92854/Fernerkundung/assets/134683810/597d64b8-5719-4e26-b799-57580c118d1d)
+
+$L$<sub>SK</sub>$[{W \over m² sr µm}]$
+
+* Datenaufnahme im Thermalbereich nahezu unbeeinflusst von reflektiertem Sonnenlicht
+* Plank'sches Strahlungsgesetz gilt nur für schwarze Körper > reale Körper strahlen weniger > Kennzeichnung durch spektralen Emissionsgrad $\epsilon$
+
+$\epsilon = {\Phi e \over \Phi s}$
+
+* $\epsilon$ ist wellenlängenabhängig > daher eigentlich $\epsilon(\lambda)$ > $\epsilon$ als Näherungsangabe
+
+### Strahlungstemperatur T<sub>S</sub>
+* Annahme: $\epsilon = 1$
+* aus Strahldichte L<sub>SK</sub> lässt sich Temperatur T<sub>S</sub> ableiten
+* es gilt: T<sub>S</sub> < T (wahre Oberflächentemperatur)
+* T = T<sub>S</sub> + $\tau$ (Korrekturbetrag (abhängig von Art der Oberfläche))
+
+#### Bestimmung von $\tau$
+* Messung der Temperatur von verschiedenen Oberflächen im Gelände
+* "in situ" Messungen = Messungen im Gelände
+
+### Einflüsse der Atmosphäre
+* Streuungsvorgänge spielen keine Rolle
+* starke Absorptionserscheinungen
+* Atmosphäre gibt selbst Strahlung ab
+  * Gegenstrahlung (Meteorologie) ist der Anteil, der zur Erdoberfläche gelangt
+  * der zum Sensor gerichtete Anteil ist ein Störfaktor
+* Absorption am geringsten im Bereich 8-13µm (Absorptionsband des Ozons: 9,6µm)
+
+## Mikrowellen
+* Bei $\lambda > 3cm$ kaum Einflüsse der Atmosphäre (Wolken werden durchdrungen)
+* $1mm < \lambda < 3cm$ werden auch Mikrowellen von der Atmosphäre beeinflusst
+* Materialien an der Erdoberfläche erzeugen aufgrund ihrer Temperatur (schwache) Mikrowellenstrahlung
+* Empfang mit Mikrowellenradiometern möglich (passives System)
+* Messung nur mit geringer geometrischer Auflösung
+* passive Mikrowellen-Fernerkundung liefert keine Bilder, die für die Interpretation geeignet sind > große Rolle spielen aktive Systeme
+
+![passive-aktive-mikrowellensysteme](https://github.com/s92854/Fernerkundung/assets/134683810/03f97488-7056-4664-8a89-3482fc576a37)
