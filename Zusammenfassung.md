@@ -185,3 +185,123 @@ $\epsilon = {\Phi e \over \Phi s}$
 * passive Mikrowellen-Fernerkundung liefert keine Bilder, die für die Interpretation geeignet sind > große Rolle spielen aktive Systeme
 
 ![passive-aktive-mikrowellensysteme](https://github.com/s92854/Fernerkundung/assets/134683810/03f97488-7056-4664-8a89-3482fc576a37)
+
+# Visuelle Bildinterpretation
+* ohne, kann Mensch sich in Umwelt weder orientieren, noch sie verstehen
+* qualitativ hochwertigste Ergebnisse
+* 3 Hauptkomponenten:
+  * Physik, Physiologie, Psychologie
+* Farbbilder leichter als Graustufenbilder interpretierbar (nur 20-30 Grautöne wahrnehmbar, aber viel mehr Farben)
+#### Aber Achtung! Künstliche Farbskalen können frei gewählt und angeordnet worden sein
+* Farbskala nicht wertfrei, da Menschen mit bestimmten Farben bestimmte Assoziationen haben (z.B. rot - blau: warm - kalt): daher auf Legende achten
+
+### Gradienten
+* Gefälle bzw. Steigung der Reizverteilung im Sehfeld
+  * Größengradienten
+  * Dichtegradienten
+  * Texturgradienten
+  * Kontrastgradienten
+  * Farbgradienten
+  * Helligkeitsgradienten
+
+## Interpretationsfaktoren
+* Helligkeit einer Fläche
+* Helligkeitsunterschiede
+* Zeit / Zeitliche Unterschiede
+* Farbton
+* Sättigung
+* Farbunterschiede
+* Form von Objekten
+* Größe von Objekten
+* Textur einer Oberfläche
+
+* Schattierungen
+* Helligkeitsgradienten
+* Fehlwahrnehmungen (Inversionen)
+* Schlagschatten
+* Relative Lage von Objekten
+* Vegetationsmuster
+* Siedlungsmuster
+* Stereoskoptischer Effekt
+
+
+### Phänologie
+periodisch wiederkehrende Entwicklungen in der Natur
+Im Jahresverlauf ändernde Texturen sind phänologische Erscheinungen
+
+![Entwässerungsnetz Übersicht](https://github.com/s92854/Fernerkundung/assets/134683810/03fb2c5f-9a8a-4a7a-b6c4-58c6130b6b10)
+
+Dentritisches Netz bspw. bei tonigem Gestein
+
+Radiales Netz bspw. an einem Vulkankegel
+
+![Entwässerungsnetz](https://github.com/s92854/Fernerkundung/assets/134683810/eba2aa42-1617-4f23-8c2d-c4767e9fac61)
+
+![Schema: Interpretationsvorgang](https://github.com/s92854/Fernerkundung/assets/134683810/e4908ae9-b5b8-48dc-9186-48a4ce8d4a7d)
+
+## Stereoskopisches Sehen
+
+![stereo](https://github.com/s92854/Fernerkundung/assets/134683810/9d42cc48-c32e-4a08-9466-bab2ba6a7360)
+
+5" - 10" kleinster Wert für $\epsilon$ (stereoskoptische Sehschärfe)
+Monoskopische Sehschärfe liegt bei 30"
+Größter Wert für $\epsilon$ liegt bei 1,3 gon bzw. 4212". Danach zerfällt das Bild in Vorder- und Hintergrund
+
+### Bedingungen für künstliches stereoskopisches Sehen
+* Zwei Bilder zeigen selbe Szene von verschiedenen Orten mit gleichem Maßstab
+* Beide Augen betrachten beide Bilder getrennt, aber gleichzeitig
+* Bilder müssen so angeordnet werden, dass Sehstrahlen der Augen im Raum in homologen Punkten am Objekt schneiden (Bilder müssen relativ orientiert sein)
+
+### Prinzip des stereoskopischen Messens
+
+![Prinzip Stereomessen](https://github.com/s92854/Fernerkundung/assets/134683810/84d2e356-2b93-409d-a4d6-6746d6da1493)
+
+#### Hilfsmittel
+* Linsenstereokop
+* Spiegelstereokop
+* Interpretationsstereokop
+* Messkeil und Messkreise
+* Stereomonitor
+
+#### Methoden der Bildinterpretation
+
+![Schema Arbeitsvorgänge](https://github.com/s92854/Fernerkundung/assets/134683810/1ef97ba6-479a-49ba-adc4-58961685df49)
+
+### Interpreationsaufgaben
+* Klassifikation
+* Zählung
+* Messung
+* Abgrenzung
+
+### Minimal Mapping Unit (kleinste zu kartierende Einheit)
+* Für praktische Durchführung einer Interpretationsaufgabe für flächenhafte Objekte, ist Festlegung der kleinsten noch zu kartierenden Einheit wichtig
+* = Mindestgröße, die ein flächenhaftes Objekt haben muss, um noch kartiert zu werden
+* Angabe in Einheiten der Bildvorlage oder in Geländeeinheiten
+* Für vergleichbare Interpretationsergebnisse eines Projekts nicht mehr ändern
+* von Nutzer festgelegt, ≠ Kartierungsgenauigkeit, aber = Detaillierungsgrad
+
+### Kartierungsgenauigkeit (mapping accuracy)
+Gibt an, mit welcher Genauigkeit Obekte in der Natur in einem bestimmten Kartenmaßstab dargestellt werden können
+Bei gedruckten Karten = kleinste in der Karte noch darstellbare Strichstärke (Maßstab 1:25.000 > Kartierungsgenauigkeit von 5m in Geländeeinheiten). D.h. Objekte < 5m sind in Karte nicht mehr maßsstäblich korrekt, also ohne Generalisierung darstellbar. Wird mit Stiften dickerer Strichstärke gearbeitet, leidet die Kartierungsgenauigkeit darunter.
+Digitale Rasterkarten sollte Pixelgröße in Geländeeinheiten der Kartierungsgenauigkeit entsprechen.
+Bei digitalen Vektorkarten muss die Kartiergenauigkeit in den Metadaten angegeben sein. Enthält Bezug auf den Kartenmaßsstab, sowie Standardabweichungen für die Knotenkoordinaten.
+
+![Gliederung Bildinhalt](https://github.com/s92854/Fernerkundung/assets/134683810/ee487f48-cdd0-4245-8223-203b82632f31)
+
+![Interpretationsschlüssel Bäume](https://github.com/s92854/Fernerkundung/assets/134683810/1828ee1e-6807-4d31-a7c5-5697f163a63b)
+
+Der Interpretationsschlüssel am Beispiel
+
+![beispiel](https://github.com/s92854/Fernerkundung/assets/134683810/04223be5-22be-4eb3-b130-474af2c4933b)
+
+![Interpretationsschlüssel beispiel](https://github.com/s92854/Fernerkundung/assets/134683810/46a6a2ad-2b97-4957-978e-aa4efbd29f38)
+
+#### Geometrische Eigenschaften
+
+![Geometrische Eigenschaften](https://github.com/s92854/Fernerkundung/assets/134683810/ee95768d-935a-4ad5-bf7c-746aedb9fa58)
+
+![Inhalt: Satellitenbild vs. Topographische Karte](https://github.com/s92854/Fernerkundung/assets/134683810/48866292-d582-4ac7-bd05-0efbfe0f307e)
+
+![Darstellung: Satellitenbild vs. Topographische Karte](https://github.com/s92854/Fernerkundung/assets/134683810/1abc97a5-888f-46db-b31f-a78092139f6e)
+
+![Interpretation und Lesbarkeit: Satellitenbild vs. Topographische Karte](https://github.com/s92854/Fernerkundung/assets/134683810/ebe52330-dc13-40f6-8133-1a6a54d9d185)
