@@ -305,3 +305,113 @@ Der Interpretationsschlüssel am Beispiel
 ![Darstellung: Satellitenbild vs. Topographische Karte](https://github.com/s92854/Fernerkundung/assets/134683810/1abc97a5-888f-46db-b31f-a78092139f6e)
 
 ![Interpretation und Lesbarkeit: Satellitenbild vs. Topographische Karte](https://github.com/s92854/Fernerkundung/assets/134683810/ebe52330-dc13-40f6-8133-1a6a54d9d185)
+
+## Auflösungsvermögen Sensor
+Für Bestimmung wird Testtafel oder Siemensstern verwendet. AV gibt an, wie viele dunkle Balken von ihren gleich großen hellen Zwischenräumen in der Abbildung gerade noch unterscheidbar sind. Angabe in Linien pro Millimeter [L/mm] oder Linienpaare pro Millimeter [Lp/mm] - 1:25,4 = AV[L/mm] : AV[dpi]
+
+### Vorgehensweise
+* Aufnahme einer Testtafel mit Linien verschiedener Ortsfrequenz (unterschiedliche Liniendicke und -abstand pro einheitliche Wegstrecke)
+* Feststellen, ab wann die Linien gerade noch erkennbar sind (in Linien pro mm: nur dunkle Linien)
+* kontrastabhängig
+
+### Faktoren
+* Beugungsunschärfe
+* Abberation (sphärische A. und chromatische A.)
+* Position im Bild (Vignettierung)
+* Körnigkeit des Films (analoge Fotographie)
+* Detektorgröße und Empfindlichkeit (digitale Fotographie)
+* Kontrast
+
+### Beugungsunschärfe $u$
+
+![Auflösungsvermögen Sensor](https://github.com/s92854/Fernerkundung/assets/134683810/a6abffb4-7472-4e5e-b500-afae65c5b2a6)
+
+![Beugungsunschärfe](https://github.com/s92854/Fernerkundung/assets/134683810/e7871430-1b8d-491f-a71c-6f40c1603c69)
+
+> Zwei trennbare Beugungsscheiben mit Interferenzringen. Die Beugungsscheiben verschmelzen zu einem Punkt wenn die Auflösungsgrenze $\delta$<sub>min</sub> unterschritten wird
+
+* durch Beugung an einer Blende kein idealer Punkt in der Bildebene
+* zentrales Beugungsscheibchen mit 84% der Strahlungsenergie
+* Interferenzringe mit 7%, 3%, etc. der Strahlungsenergie
+* der Sensor hält meistens nur das zentrale Beugungsscheibchen fest
+
+#### theoretischer Gesamtdurchmesser u<sub>th</sub>
+
+$u$<sub>th</sub>$[qm] = 2,44 * k * \lambda$
+
+> $\lambda$ = Wällenlänge in µm
+
+> k = $c \over d$ = Blendenzahl
+
+Für fotografische Emulsion gilt aus Erfahrung
+$u = 0,75 * u$<sub>th</sub>
+
+#### Für die mittlere Wellenlänge des sichtbaren Lichts
+
+$\lambda$ = 0,55µm
+
+gilt:
+
+$u [µm] ≈ k = c \over d$
+
+$\delta$<sub>min</sub> ≈ $u \over 2$
+
+> k = Blendenzahl
+
+> c = Kamerakonstante
+
+> d = Blendendurchmesser
+
+> $\delta$<sub>min</sub> = Abstand von zwei zentralen Beugungsscheibchen
+
+#### Beugungsunschärfe $u$ als Funktion der Blendenzahl $k$
+
+![Beugungskurve](https://github.com/s92854/Fernerkundung/assets/134683810/a0caa62d-9bab-494d-99e2-58076cd19a86)
+
+Je größer die Blendenöffnung, desto kleiner die Blendenzahl, desto höher das Auflösungsvermögen
+
+## Aberation
+... ist eine Abweichung von der idealen geometrisch-optischen Abbildung
+* spärische Aberration (Öffnungsfehler)
+  * parallel objektseitig auf eine Sammellinse einfallende Strahlen schneiden sich bildseitig nicht in einem Punkt
+
+![sphärische aberration](https://github.com/s92854/Fernerkundung/assets/134683810/46806147-b193-4526-905c-0f22c00ec5e6)
+
+* chromatische Aberration (Farbfehler)
+  * unterschiedliche Wellenlängen > bei Übergang zwischen zwei Medien untersch. stark gebrochen > Farbfehler in optischer Abbildung
+
+![chromatische aberration](https://github.com/s92854/Fernerkundung/assets/134683810/0b019868-0f71-48f2-bc6c-97438d034489)
+
+### Optimales Auflösungsvermögen: Zusammenhang Blende, Beugungsunschärfe
+
+![Optimales Auflösungsvermögen](https://github.com/s92854/Fernerkundung/assets/134683810/85479442-68e4-478b-aa27-c439aa797bc3)
+
+### Vignette
+... ist ein Lichtabfall von der Bildmitte zum Bildrand hin. Damit nimmt auch die Auflösung zum Bildrand hin ab.
+
+### Körnung des analogen Films
+* nichtentwickelter Film - Körner = Silberhalogenidkristalle
+* entwickelter Film - Körner = Ballungen aus Silbermolekülen von 0,5 - 2 µm Durchmesser
+* angegeben in RMSG (root mean square granularity)
+* je grobkörniger, desto lichtempfidlicher der Film
+
+### Kontrastübertragung
+Die Ortsfreuquenz $f$ des Objekts beeinflusst den Kontrast im Bild ($f = 1 \over d$)
+Balkenmuster als Testobjekt
+
+#### Kontrast K bzw. C
+wird auf Grundlage größter und kleinster Intensitäten definiert
+
+$$K = I max \over I min$$
+
+$$C = I max - I min \over I max + I min$$
+
+$(0 <= C <= 1)$
+
+&nbsp;
+
+| K | C |
+|----------|----------|
+| 1000:1 | 0,998  |
+| 6,3:1   | 0,73  |
+| 1,6:1    | 0,23  |
