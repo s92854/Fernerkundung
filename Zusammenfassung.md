@@ -395,7 +395,7 @@ Je größer die Blendenöffnung, desto kleiner die Blendenzahl, desto höher das
 * angegeben in RMSG (root mean square granularity)
 * je grobkörniger, desto lichtempfidlicher der Film
 
-### Kontrastübertragung
+### Kontrast
 Die Ortsfreuquenz $f$ des Objekts beeinflusst den Kontrast im Bild ($f = 1 \over d$)
 Balkenmuster als Testobjekt
 
@@ -415,3 +415,59 @@ $(0 <= C <= 1)$
 | 1000:1 | 0,998  |
 | 6,3:1   | 0,73  |
 | 1,6:1    | 0,23  |
+
+#### Kontrastübertragung
+Balkenmuster im Bild. Je höher die Ortsfrequenz $f$ des Objekts (je kleiner der Abstand der Balken), desto niedriger der Kontrast C' im Bild.
+
+##### Kontrastübertragungsfunktion
+... gibt in Abhängigkeit von den Ortsfrequenzen $f$ an, wie viel Prozent der vom Objekt ausgehenden Strahlungsintensität in die Bildebene übertragen wird.
+
+![Kontrastübertragungsfunktion](https://github.com/s92854/Fernerkundung/assets/134683810/b3a54eaf-d970-4041-9bf0-d899d5418bf1)
+
+$$CT = C' \over C$$
+
+Der Bildkontrast ist von der Ortsfreuquenz des aufgenommenen Objekts abhängig (je höher die die Ortsfrequenz, desto schlechter der Kontrast). Umgekehrt begrenzt der Bildkontrast die Auflösungsgrenze, d.h. die Ortsfrequenzen, die im BIld gerade noch wiedergegeben werden können.
+#### Fazit
+Das maximale Auflösungsvermögen eines Filmmaterials oder eines digitalen Sensors lässt sich exakt nur für einen eindeutig definierten Objektkontrast angeben.
+
+### Detektorgröße
+Detektorgröße $\delta x, \delta y$ ist für Auflösung und Lichtempfindlichkeit entscheidend (je größer Detektorfläche, desto Lichtempfindlicher). Abstand der Detektoren (Digitalisierungsabstand $\delta n$<sub>s</sub>) wichtig.
+
+### (Nyquist-Shannon-) Abtasttheorem
+
+![Abtasttheorem](https://github.com/s92854/Fernerkundung/assets/134683810/7aba5f7e-861c-45b8-a334-ec0e4ee34a41)
+
+### Aliasing-Effekt
+
+![Aliasing](https://github.com/s92854/Fernerkundung/assets/134683810/ed52fbcb-0727-45a8-a7e1-86a365f22c73)
+
+### Moiré-Effekt
+
+![Moiré](https://github.com/s92854/Fernerkundung/assets/134683810/55583e82-af20-4a09-a5d9-0358f6c6e1b6)
+
+## Geometrische Auflösung
+= Bodenauflösung (bei Satellitenbildern) : GSD = Ground Sampling Distance [m]
+Je höher der Objektkontrast, desto kleinere Objekte können im digitalen Bild noch erkannt werden (und umgekhert).
+
+$$ geometrische Auflösung = \frac{Pixelgröße}{Brennweite} * Abstand zum Objekt$$
+
+![geometrische Auflösung](https://github.com/s92854/Fernerkundung/assets/134683810/ed4b5dd3-e1a7-418a-b4e3-5b23d49b8f33)
+
+> Pixelgröße = Seitenlänge eines quadratischen Pixels mit Bezug auf die Bildebene des Sensors. Ø 1px: 3 - 8µm
+
+Bei hohem Kontrast können auch Objekte kleiner als die geometrische Auflösung erkennbar sein. Umgekehrt können Objekte, die größer als die geometrische Auflösung durch geringen Kontrast zum Umfeld nicht sichbar sein.
+
+### Auflösungsvermögen und Kontrastübertragung
+
+![mittelwertbildung pixel](https://github.com/s92854/Fernerkundung/assets/134683810/aac2e0ba-e64d-4ce9-ab83-28fe84e79a9d)
+
+Weshalb eine 5m breite Straße mit 30m Bodenauflösung erkannt werden kann:
+
+![landsat-wüste](https://github.com/s92854/Fernerkundung/assets/134683810/ee6b36a3-1073-464f-8571-f2ceeaf95259)
+
+
+### Kell-Faktor
+Kein Zusammenhang zwischen Auflösungsvermögen und in Pixelgrößen angegebener Auflösung digitaler Rasterdaten > Vergleichbarkeit herstellen (z.B. Kell-Faktor).
+Auflösung [m/lp] ≈ 2,8 * Auflösung [m/px]
+
+## Radiometrische Auflösung
