@@ -471,3 +471,24 @@ Kein Zusammenhang zwischen Auflösungsvermögen und in Pixelgrößen angegebener
 Auflösung [m/lp] ≈ 2,8 * Auflösung [m/px]
 
 ## Radiometrische Auflösung
+### A/D Wandlung (analog/digital)
+* Abtastung des analogen Sensorsignals
+* Angabe, in wieviele Grauwerte der Bereich zwischen Schwarz und Weiß unterteilt wird
+* je höher r.Auflösung, desto mehr Details lassen sich auch bei schwachem Kontrast erkennen
+
+#### 1 Bit Radiometrische Auflösung
+
+![1bit r.a.](https://github.com/s92854/Fernerkundung/assets/134683810/f0e5a1f3-86bd-4d0a-a0ea-989a0431858d)
+
+> Elektrooptischer Wandler gibt 0 oder 1 (schwarz/weiß) aus (Binärbild)
+
+&nbsp;
+
+#### 12 Bit Radiometrische Auflösung
+
+![12bit r.a.](https://github.com/s92854/Fernerkundung/assets/134683810/25a1849c-a6d8-45b2-93eb-1e8f9e33ecd7)
+
+> Elektrooptischer Wandler hat 2<sup>12</sup> = 4096 mögliche Grauwerte (Wertebereich von 0 bis 4095) > deutlich Detailreicher
+
+Tatsächlicher Grauwertumfang hängt von radiometrischer Kalibrierung der Kamera ab
+
