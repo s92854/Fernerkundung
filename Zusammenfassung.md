@@ -532,3 +532,100 @@ Unterschiedliche Kanäle offenbaren andere Strukturen (bspw. sind Gewässer im N
 ### Umlaufbahn der LANDSAT-Satelliten
 * Bahn ist polar, kreisförmig und sonnensynchron
   * Sonnensynchron = Äquator wird stets zur selben Ortszeit (9:30 Uhr) überflogen (dient dazu, annähernd gleiche Aufnahmebedingungen zu erreichen)
+
+## Optisch-Mechanischer Sensor
+...auch Whisk-Broom (Wischbesen) Scanner genannt
+
+![Optisch-mechanischer Sensor](https://github.com/s92854/Fernerkundung/assets/134683810/b077f009-4b4d-473d-b717-bd3155d742f7)
+
+### Temperaturreferenz zur Aufnahme von Thermalstrahlung
+
+![Temperaturreferenz](https://github.com/s92854/Fernerkundung/assets/134683810/409d326d-e521-4417-9eab-e57c50fe31f9)
+
+### Geometrie der optisch-mechanischen Abtastung
+
+![Geometrie](https://github.com/s92854/Fernerkundung/assets/134683810/ba28cd57-cf98-427f-ae9d-41f026824da0)
+
+### Überlagerung von Flug- und Rotationsbewegung des Spiegels
+Panorama- und S-förmige Verzerrung
+
+![Überlagerung](https://github.com/s92854/Fernerkundung/assets/134683810/16ca3c39-32b8-4083-beab-76d42635572c)
+
+#### Unkorrigiertes Luftbild
+
+![unkorrigiert](https://github.com/s92854/Fernerkundung/assets/134683810/1d9b9e94-5e3b-4810-9bcc-f9be949881cf)
+
+#### Korrigiertes Luftbild
+
+![korrigiert](https://github.com/s92854/Fernerkundung/assets/134683810/abf62c1c-e6be-46ff-a0cd-3dad0f57ad5b)
+
+## Optoelektrische Zeilenkameras
+... auch Push-Broom (Schiebebesen) Scanner genannt.
+
+![optoel. Zeilenkamera](https://github.com/s92854/Fernerkundung/assets/134683810/626ea2c1-0228-4e1f-9f30-268010200e76)
+
+![Mehrzeilensensor](https://github.com/s92854/Fernerkundung/assets/134683810/b1ed5bd6-88b7-4e81-83bc-41de35b77d87)
+> HRSC-AX
+
+> Panchromatische Zeilen: SA, PA, Nd, PF, SF
+
+> Multispektrale Zeilen: Bl = blau, Gr = grün, Rd = rot, IR = nahes Infrarot
+
+![Korrektur](https://github.com/s92854/Fernerkundung/assets/134683810/ffab887c-5525-4064-8aa1-f9c28a7d3710)
+
+### Photogrammetrische Punktbestimmung
+
+![photog. Punktbestimmung](https://github.com/s92854/Fernerkundung/assets/134683810/9376b38d-1cf2-46d5-9c1b-99981ecafe60)
+
+## Optoelektrische Flächenkameras
+Sie soll mit analogen Reihenmesskameras konkurrieren, in puncto:
+* Bildformat
+* geometrischer Auflösung
+* Radiometrischer Auflösung
+* Spektraler Auflösung
+
+Ein digitaler Flächensensor müsste über 26.000px * 26.000px = 2,1 Gigapixel verfügen, um 23cm * 23cm analogem Bild mit 5µm Pixelgröße zu entsprechen > bis heute unmöglich
+
+### Technische Realisierungen
+#### Flächensensoren
+* Butterfly-Typ
+
+![image](https://github.com/s92854/Fernerkundung/assets/134683810/e5c6ff8e-eb2b-42b0-a5a2-5234e0009fe6)
+
+* Patchwork-Typ
+* Single-Array-Typ
+#### Zeilensensoren (Pixelteppich-Typ)
+* Sensoren mit einer Zeile
+* Mehreilensensoren
+
+#### Monolithischer-CCD-Sensor (DMC II)
+Für die Multispektralen Kanäle:
+* 4 42Mpx CCDs mit 7,2µm Pixelgröße > 43,9mm x 49,3mm / 6096px x 6846px
+* 45mm Brennweite
+
+Für den Panchromatischen Kanal
+Option 1: DMC 140
+* 1 140 Mpx Sensor mit 7,2µm Pixelgröße > 88mm x 82mm / 12240 px x 11418 px
+* 92mm Brennweite
+Option 2: DMC 250
+* 1 250 Mpx Sensor mit 5,6µm Pixelgröße > 90mm x 84mm / 17216 px x 15556 px
+* 112mm Brennweite
+
+##### Postprocessing
+* Geometrische Auflösung MS/Pan = 1:2
+* Hochauflösende MS-Bilder durch Pan-Sharpening
+
+##### CCD des Panchromatischen Kanals
+
+![ccd-pan](https://github.com/s92854/Fernerkundung/assets/134683810/e01411cc-55db-4c9b-831d-da9603b8a7c7)
+
+
+### Photogrammetrische Punktbestimmung
+
+![photog. Punktbestimmung](https://github.com/s92854/Fernerkundung/assets/134683810/c52b2572-fee2-4967-af6b-3bea4c76077f)
+
+#### Geometrische Eigenschaften
+> Luftbild entsteht in Zentralprojektion
+
+![zentralprojektion](https://github.com/s92854/Fernerkundung/assets/134683810/5c3e0b5a-4066-40e5-bf86-d4494aeec10b)
+
