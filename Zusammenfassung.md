@@ -492,3 +492,43 @@ Auflösung [m/lp] ≈ 2,8 * Auflösung [m/px]
 
 Tatsächlicher Grauwertumfang hängt von radiometrischer Kalibrierung der Kamera ab
 
+#### Typische Schärzungskurve Analoges Filmmaterial
+
+![Schwärzungskurve Analog](https://github.com/s92854/Fernerkundung/assets/134683810/b6e0421f-2ecf-4bf1-8e7b-b81627e01520)
+
+#### Typische Kennlinie CCD-Element
+
+![Kennlinie CCD](https://github.com/s92854/Fernerkundung/assets/134683810/b6290b33-b145-42dd-a484-33f4c34d00c1)
+
+
+## Spektrale Auflösung
+Angabe, wie viele unterschiedliche Spektralkanäle aufgezeichnet werden, sowie welcher Bereich von einem Kanal erfasst wird (Grenzen jedes Kanals).
+
+### Begriffe
+VNIR = visible + near infrared
+* visible = sichtbares Licht (Wellenlängenbereich ca. 0,4µm - 0,7µm)
+* near infrared = nahes Infrarot (0,7 - 1,4µm)
+* SWIR = short wavelenght infrared (1,4  3,0µm)
+* MWIR = mid wavelenght infrared (3,0 - 8,0µm)
+* LWIR = long wavelenght infrared (Thermales Infrarot) (8,0 - 15,0µm)
+* Spektrale Auflösung = spectral resolution
+* Panchromatisch = 1 Kanal
+* Multispektral = 2-12 Kanäle
+* Hyperspektral = > 100 Kanäle
+
+Je höher die spektrale Auflösung, desto geringer ist die Bandbreite. Bsp.: Ein Panchromatischer Kanal hat eine größere Bandbreite, als jeweils einer der drei Farbkanäle.
+
+![Aufteilung spektrale Auflösung](https://github.com/s92854/Fernerkundung/assets/134683810/456ce3fd-ac81-4872-a5fb-e5fef9afa4f9)
+
+* Digitale Aufnahmesysteme können mehrere Spektralbereiche simultan aufnehmen
+* Spektrale Eigenschaften eines digitalen Aufnahmesystems sind kalibrierbar. Fotochemiches Filmmaterial (analoger Film ist radiometrisch nicht kalibrierbar)
+* Messung von Reflektanzen möglich
+
+Unterschiedliche Kanäle offenbaren andere Strukturen (bspw. sind Gewässer im NIR-Kanal sehr gut erkennbar und im Grünkanal fast gar nicht)
+
+## Temporale Auflösung (Wiederholrate)
+= kürzeste Zeitintervall mit dem ein Fernerkundungssystem einen identischen Ausschnitt der Erdoberfläche wiederholt aufnehmen kann
+
+### Umlaufbahn der LANDSAT-Satelliten
+* Bahn ist polar, kreisförmig und sonnensynchron
+  * Sonnensynchron = Äquator wird stets zur selben Ortszeit (9:30 Uhr) überflogen (dient dazu, annähernd gleiche Aufnahmebedingungen zu erreichen)
