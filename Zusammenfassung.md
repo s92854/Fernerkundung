@@ -629,3 +629,57 @@ Option 2: DMC 250
 
 ![zentralprojektion](https://github.com/s92854/Fernerkundung/assets/134683810/5c3e0b5a-4066-40e5-bf86-d4494aeec10b)
 
+* Radiale Punktversetzung durch Höhenunterschiede
+
+![Radiale Punktversetzung](https://github.com/s92854/Fernerkundung/assets/134683810/24fd6c87-8927-4696-a203-f14d102ecb03)
+
+### Abbildende Spektrometer
+* Hyperspektrometer
+* kontinuierliche Erfassung von weiten Bereichen des elektromagnetischen Spektrums mit sehr vielen Kanälen > "Datenwürfel" (z.B. vom Zürichsee, SCHWEIZ) bestehend aus 126 Spektralkanälen
+
+![Datenwürfel](https://github.com/s92854/Fernerkundung/assets/134683810/1ddf20ff-091a-4349-a844-b89e69efce1f)
+
+### Lidar Laserscanner
+Prinzip:
+* gepulste Laserscanner (pulsed laser scanner)
+* permanent messende Laserscanner (continous wave laser, cw laser, full waveform laser)
+
+![Lidar](https://github.com/s92854/Fernerkundung/assets/134683810/e54913a8-6073-4699-8e51-323ba80383ee)
+
+#### Aufnahme mit gepulstem Laserscanner Leica ALS60 (200kHz)
+
+![Gepulst](https://github.com/s92854/Fernerkundung/assets/134683810/f9771e84-8a60-4f22-aac8-4c0e17092a41)
+
+#### Einfach- und Mehrfachechos bei gepulsten Laserscannern
+
+![Einfach- und Mehrfachechos bei gepulsten Laserscannern](https://github.com/s92854/Fernerkundung/assets/134683810/7a5ec79f-7c38-4372-8c3e-55bc0bf0eb5e)
+
+#### Mehrfachechos bei gepulsten Laserscannern
+
+![Mehrfachechos](https://github.com/s92854/Fernerkundung/assets/134683810/c7d7456c-6387-4ebe-8269-0c332920373b)
+
+![Wald Vectorlayer](https://github.com/s92854/Fernerkundung/assets/134683810/ea86be67-87dd-4958-a0f8-dde74f2db81d)
+
+> Gewinnung von Höhendaten > Visualisierbar
+
+> Anbieter von flugzeuggetragenen Laserscannern: Fugro, Hexagon, IGI, Leica Geosystems, ...
+
+## Satellitengestütze Stereoaufnahme
+* Stereoaufnahme durch schwenkbare Aufnahmesysteme
+  * Stereo in Flugrichtung (along-track stereo)
+  * Stereo quer zur Flugrichtung (across-track stereo)
+* Zwei- und Mehrzeilenscanner
+* permanente Stereoaufnahme nur mit Zwei- und Mehrzeilenscannern möglich
+
+#### IKONOS als Beispiel für eine Stereoaufnahme in Flugrichtung
+![IKONOS Stereo](https://github.com/s92854/Fernerkundung/assets/134683810/a689f05a-5a34-463c-b3e1-aefb89d36281)
+
+#### SPOT als Beispiel für eine Stereoaufnahme quer zur Flugrichtung
+![SPOT Stereo Quer](https://github.com/s92854/Fernerkundung/assets/134683810/8773f995-e149-4c1a-b15a-669059d1cdcb)
+
+#### ASTER Zweizeilenscanner
+![ASTER Stereo](https://github.com/s92854/Fernerkundung/assets/134683810/b178b3ef-8092-46a3-b5b6-a5fec1d74065)
+
+### Zusammenfassung Fernerkundungssysteme nach Ehlers
+
+![Zusammenfassung Fernerkundungssysteme](https://github.com/s92854/Fernerkundung/assets/134683810/17713552-5a8f-4473-9a90-1c6fb8b6522d)
